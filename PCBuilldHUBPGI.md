@@ -4,7 +4,11 @@ Group Name: Group 6
 Project Title: PC Build Hub
 
 ## A. Problem Statement:
-Building a PC requires technical knowledge, especially regarding the compatibility of parts. Many beginners struggle with choosing the right components, ensuring compatibility, and assembling their PC. There is also a lack of reliable local resources to purchase PC parts and receive guidance, especially in North Caloocan, Philippines.
+Building a PC is highly technical, especially in terms of the compatibility of parts. Most beginners get stuck on choosing the appropriate components and assembling their PCs. Moreover, there are few reliable local resources that one can turn to when buying computer parts and getting advice, especially around North Caloocan, Philippines. Some of the common problems include; []
+
+• Confusion about the compatibility of the component.
+• Lack of availability of reliable and trusted local vendors.
+• Lack of proper assembly instructions in detail and resulting in mistakes while building it.
 
 ## B. Project Description:
 PC Build Hub is an all-in-one ecommerce platform where users can buy PC parts and receive step-by-step video tutorials to guide them through assembling their components. The app aims to simplify the PC-building process by offering a tool to check component compatibility, provide personalized build suggestions, and allow users to purchase all necessary parts from a trusted marketplace. The system will cater to both beginners and experienced PC builders.
