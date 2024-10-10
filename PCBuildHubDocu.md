@@ -22,12 +22,16 @@ It features different categories of parts; processors, graphics cards, motherboa
 
 2.Build Configuration Tool- Assists user with a tailor-made PC by choosing parts which could couple with each other. 
 In case the user's chosen parts fail to match, recommendations are provided by the tool.
-Video Tutorial Module-Provides video guides to enable a user to assemble his or her own PC from scratch, hence assuring proper assembly.
-3. User Profiles and Build Saving – This feature allows users to create user profiles, save custom PC builds, and track past purchases or wishlists.
-4. Order Tracking and Payment Module – The module has real-time order tracking with secure online payments, allowing users to track the purchase and delivery status.
-5. Community Forum – This is a feature that enables users to be part of a community of PC builders,
-   where they can seek advice, share builds, and get tips from experienced builders.
-6. Reports Module – Informs the admin-users of the daily, weekly, monthly and yearly sales reports, user activity reports and popular builds reports. 
+
+3.Video Tutorial Module- Provides video guides to enable a user to assemble his or her own PC from scratch, hence assuring proper assembly.
+
+4. User Profiles and Build Saving – This feature allows users to create user profiles, save custom PC builds, and track past purchases or wishlists.
+
+5. Order Tracking and Payment Module – The module has real-time order tracking with secure online payments, allowing users to track the purchase and delivery status.
+
+6. Community Forum – This is a feature that enables users to be part of a community of PC builders, where they can seek advice, share builds, and get tips from experienced builders.
+
+7. Reports Module – Informs the admin-users of the daily, weekly, monthly and yearly sales reports, user activity reports and popular builds reports. 
 
 ## Project Scope
 
