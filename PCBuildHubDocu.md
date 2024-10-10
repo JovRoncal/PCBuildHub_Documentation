@@ -16,7 +16,6 @@ It allows users to create profiles and save their builds so that they can purcha
 to make the process of building a custom PC as easy and streamlined as possible.
 
 ## Project Features and Characteristics
-### PCBuildHub: Key Features
 
 1. User Accounts: 
    - Users can sign up, log in, and manage their profiles.
