@@ -120,6 +120,8 @@ For better view https://www.figma.com/design/AGRTYcqHsYlPiwQF9KIATa/Untitled?nod
 
 ![image](https://github.com/user-attachments/assets/32032259-80b4-4c31-8dec-5403738a76e7)
 
+For best view: https://www.figma.com/design/gDnp740G80bjTRiuNtwzaq/Untitled?node-id=0-1&node-type=canvas&t=Ds8ATXg6EvT5qoHJ-0
+
 
 ## Database Architecture
 
