@@ -49,6 +49,8 @@ on sales and user activities and will also be able to administer or have control
 
 ![image](https://github.com/user-attachments/assets/9be82d3f-7156-405b-acbf-9e2dbef4ec9d)
 
+For better view https://www.figma.com/design/AGRTYcqHsYlPiwQF9KIATa/Untitled?node-id=0-1&node-type=canvas&t=tTrqhhi1S46zY8D8-0
+
 
 ## Functional Requirements
 
