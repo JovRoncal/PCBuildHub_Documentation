@@ -27,30 +27,33 @@ To develop the PC Build Hub App that will help manage the PC building process wi
 4.Reduce return rates by ensuring component compatibility before purchase.
 
 ## E. Project Deliverables:
-    1. Requirements
-      • Research and analysis
-      • Data Gathering
-      • User Stories
-      • User Requirements
-      • Use Case
-      • Data Dictionary
-      • Entity Relationship Diagram
-      • Dataflow Diagram
-    
-    2. Design
-      • Low Fidelity
-      • High Fidelity
-      • Prototype
-    
-    4. Development
-       
-    
-    6. Test
-      • Functional
-      • Non-Functional
-    
-    8. Deploy
-      • User Acceptance Testing
+1. Requirements
+Research and Analysis: Gather insights on PC building and ecommerce systems.
+Data Gathering: Collect information on PC components, user needs, and market trends.
+User Stories: Define user interactions with the system (customers, admins).
+User Requirements: Detail system needs from the perspective of end-users.
+Use Case: Identify core actions (e.g., purchasing components, managing inventory).
+Data Dictionary: Document all fields and data types for each database table.
+Entity Relationship Diagram (ERD): Visualize relationships between system entities (users, orders, components).
+Dataflow Diagram: Outline how data moves between modules within the system.
+
+2. Design
+Low-Fidelity Mockups: Initial wireframes showing basic layout and navigation.
+High-Fidelity Designs: Detailed designs with visual elements, colors, and branding.
+Prototype: Interactive demo to simulate core system functions for user feedback.
+
+3. Development
+Frontend: Build user interfaces using Angular, ensuring a responsive design.
+Backend: Develop the system’s logic, including database handling and API integration.
+Database Setup: Implement the database structure to support user, order, and component data.
+
+4. Testing
+Functional Testing: Verify core functions (e.g., orders, inventory, and user logins).
+Non-Functional Testing: Test system performance, security, and usability.
+
+5. Deployment
+User Acceptance Testing (UAT): Conduct UAT with real users to validate the system.
+System Launch: Deploy the system to the production environment for public use.
 
 ## F. Benchmarking
   1. PCPartPicker – for build configurator and compatibility checking system
