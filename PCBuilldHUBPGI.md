@@ -11,24 +11,29 @@ Building a PC is highly technical, especially in terms of the compatibility of p
 • Lack of proper assembly instructions in detail and resulting in mistakes while building it.
 
 ## B. Project Description:
-PC Build Hub is an all-in-one ecommerce platform where users can buy PC parts and receive step-by-step video tutorials to guide them through assembling their components. The app aims to simplify the PC-building process by offering a tool to check component compatibility, provide personalized build suggestions, and allow users to purchase all necessary parts from a trusted marketplace. The system will cater to both beginners and experienced PC builders.
+PC Build Hub: This website acts as an all-in-one e-commerce website, making the entire process of PC building simple and efficient. Here you can order all your PC parts, and it then guides you through step-by-step video tutorials in assembling the PC. The app is also designed to sort out compatibility issues with:
+    
+• A comprehensive list of all the available parts along with accurate pricing and actual availability information.
+• Construct configurator tool to check compatible components.
+• Provides a personalized suggestion on building based on the user's preference and budget.
+• A trusted marketplace where all the necessary parts will be present, not just for new builders but also for experienced ones.
 
 ## C. Project Objectives:
-To develop the PC Build Hub App that will help manage the PC building process with the following features:
+To develop the PC Build Hub App with the following measurable objectives:
 
-1.A comprehensive parts catalog with real-time pricing and availability
-2.A build configurator tool to ensure compatibility of selected components
-3.Step-by-step video tutorials to guide users in building their PC
-4.Secure online payment and order tracking system
-5.User profiles with saved builds and wishlists
-6.Community forums for advice and support
+1. Catalog and Availability: Create a comprehensive parts catalog with real-time pricing and availability, aiming for at least 90% accuracy.
+2. Compatibility Tool: Implement a build configurator tool to reduce compatibility-related return rates by 20%.
+3. Guidance: Provide step-by-step video tutorials to enhance user confidence and reduce assembly errors by 30%.
+4. Secure Transactions: Develop a secure online payment and order tracking system to ensure user trust and satisfaction.
+5. User Engagement: Enable user profiles for saved builds and wishlists, targeting a user retention rate of 75%.
+6. Community Support: Establish community forums for user interaction and support, aiming to increase engagement by 50% within the first year.
 
 ## D. Business Benefits:
 
-1.Provide a streamlined, all-in-one solution for PC building, from purchasing to assembly.
-2.Increase accessibility for beginners through video tutorials, reducing build mistakes.
-3.Create a local marketplace for reliable PC parts in North Caloocan, increasing customer trust.
-4.Reduce return rates by ensuring component compatibility before purchase.
+1. Streamlined Solutions: Full solution from PC purchasing and building to ensuring it's user-friendly for the client.
+2. Increased Accessibility: It helps beginners have increased accessibility through video tutorials, thus decreasing mistakes in common build and increasing user confidence.
+3. This would set up a reliable local marketplace for PC parts in North Caloocan, fostering trust among clients and supporting local entities.
+4. Return Rate Decrease: Pre-purchase compatibility checks would decrease the return rates while creating satisfaction and loyalty for customers.
 
 ## E. Project Deliverables:
 1. Requirements
