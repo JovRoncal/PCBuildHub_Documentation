@@ -117,7 +117,9 @@ For better view https://www.figma.com/design/AGRTYcqHsYlPiwQF9KIATa/Untitled?nod
 |     |            | F. Video Tutorials Module                                | 6. The system must allow users to access video tutorials on building their PCs using purchased components.                                                 |
 
 ### use case
-![image](https://github.com/user-attachments/assets/8229f510-9130-42a0-a054-2f689662dd7a)
+
+![image](https://github.com/user-attachments/assets/32032259-80b4-4c31-8dec-5403738a76e7)
+
 
 ## Database Architecture
 
