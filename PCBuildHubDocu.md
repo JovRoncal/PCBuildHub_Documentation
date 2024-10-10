@@ -1,4 +1,4 @@
-# PC BUILD HUB: Ecommerce and PC Build Management App
+# PC BUILD HUB: Ecommerce and PC Build Management
 
 ## INTRODUCTION
 
