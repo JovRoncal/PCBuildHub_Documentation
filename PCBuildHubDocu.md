@@ -16,22 +16,40 @@ It allows users to create profiles and save their builds so that they can purcha
 to make the process of building a custom PC as easy and streamlined as possible.
 
 ## Project Features and Characteristics
-The proposed project Umak Library Mobile App consists of the following features:
-1. PC Parts Catalog - It provides a huge collection of computer components with live prices and availability.
-It features different categories of parts; processors, graphics cards, motherboards, and others.
+### PCBuildHub: Key Features
 
-2.Build Configuration Tool- Assists user with a tailor-made PC by choosing parts which could couple with each other. 
-In case the user's chosen parts fail to match, recommendations are provided by the tool.
+1. User Accounts: 
+   - Users can sign up, log in, and manage their profiles.
+   - Admins manage the system, customers shop and configure builds.
 
-3.Video Tutorial Module- Provides video guides to enable a user to assemble his or her own PC from scratch, hence assuring proper assembly.
+2. PC Components Catalog:
+   - Detailed listings of components (CPUs, GPUs, etc.) with prices, stock, and images.
 
-4. User Profiles and Build Saving – This feature allows users to create user profiles, save custom PC builds, and track past purchases or wishlists.
+3. Custom PC Configuration:
+   - Users build custom PC setups, calculate total price, and save configurations.
 
-5. Order Tracking and Payment Module – The module has real-time order tracking with secure online payments, allowing users to track the purchase and delivery status.
+4. Order Management:
+   - Users can place orders, track statuses, and view order history.
+   - Admins can manage and update order statuses.
 
-6. Community Forum – This is a feature that enables users to be part of a community of PC builders, where they can seek advice, share builds, and get tips from experienced builders.
+5. Ratings & Reviews:
+   - Customers can rate and review components.
+   - Admins can moderate reviews.
 
-7. Reports Module – Informs the admin-users of the daily, weekly, monthly and yearly sales reports, user activity reports and popular builds reports. 
+6. Inventory Management:
+   - Real-time stock tracking with admin alerts for low inventory.
+
+7. Action Logs:
+   - Logs track user and admin actions with timestamps for auditing.
+
+8. Search & Filters:
+   - Search components by name, type, or brand, and filter by price, rating, etc.
+
+9. Admin Dashboard:
+   - Admins view metrics, manage orders, inventory, and users from a central dashboard.
+
+10. **Mobile-Friendly**:
+    - Responsive design for mobile and desktop users.
 
 ## Project Scope
 
