@@ -19,6 +19,7 @@ to make the process of building a custom PC as easy and streamlined as possible.
 The proposed project Umak Library Mobile App consists of the following features:
 1. PC Parts Catalog - It provides a huge collection of computer components with live prices and availability.
 It features different categories of parts; processors, graphics cards, motherboards, and others.
+
 2.Build Configuration Tool- Assists user with a tailor-made PC by choosing parts which could couple with each other. 
 In case the user's chosen parts fail to match, recommendations are provided by the tool.
 Video Tutorial Module-Provides video guides to enable a user to assemble his or her own PC from scratch, hence assuring proper assembly.
