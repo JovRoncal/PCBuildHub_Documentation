@@ -126,136 +126,79 @@ For best view: https://www.figma.com/design/gDnp740G80bjTRiuNtwzaq/Untitled?node
 ## Database Architecture
 
 ### Data Dictionary
-### Table 1: ACCOUNT_TYPE
+### Table 1: USER
+  
+| FIELD NAME  | DESCRIPTION                          | DATA TYPE | LENGTH | SAMPLE        |
+|-------------|--------------------------------------|-----------|--------|---------------|
+| USER_ID     | Unique Identification of User        | String    | 255    | ABC1234       |
+| NAME        | Full name of the user                | String    | 255    | Roel Lungayan |
+| EMAIL       | User email                           | String    | 255    | roel@gmail.com|
+| PASSWORD    | Encrypted user password              | String    | 255    | encrypted_pass|
+| ACCOUNT_TYPE| Type of user (Admin, Customer)       | String    | 255    | Admin         |
+| CREATED     | Date the user account was created    | String    | Date   | 12/12/2023    |
 
-| FIELD NAME | DESCRIPTION                          | DATA TYPE | LENGTH | SAMPLE        |
-|------------|--------------------------------------|-----------|--------|---------------|
-| USER_ID    | Unique Identification of User        | String    | 255    | FDSFDSF1233   |
-| TYPE       | Identify if borrower or librarian    | String    | 55     | Borrower      |
-| STATUS     | Identify online or Offline           | Boolean   |        | True          |
-| CREATED    | Datetimestamp of user Created        | Date      |        | 11 2 2022 13:01 |
+### Table 2: PC_COMPONENT
 
-### Table 2: LIBRARIAN
+| FIELD NAME        | DESCRIPTION                             | DATA TYPE | LENGTH | SAMPLE                |
+|-------------------|-----------------------------------------|-----------|--------|-----------------------|
+| COMPONENT_ID      | Unique ID for each component            | String    | 255    | CPU1234               |
+| NAME              | Name of the component                   | String    | 255    | Intel i7 Processor    |
+| TYPE              | Type of component (e.g., CPU, RAM, GPU) | String    | 255    | CPU                   |
+| BRAND             | Brand of the component                  | String    | 255    | Intel                 |
+| PRICE             | Price of the component                  | Float     |        | 350.00                |
+| STOCK             | Number of components available          | Int       |        | 20                    |
 
-| FIELD NAME        | DESCRIPTION                   | DATA TYPE | LENGTH | SAMPLE                |
-|-------------------|-------------------------------|-----------|--------|-----------------------|
-| LIBRARIAN_ID      | Librarian identification number| String    | 255    | ADEUWYE232            |
-| NAME              | Librarian Name                | String    | 255    | Raiden Guillergan     |
-| LIBRARIAN_EMAIL   | Librarian Email               | String    | 255    | guillergan@umak.edu.ph|
-| DEPARTMENT        | Librarian Department          | String    | 255    | CCIS                  |
+### Table 3: ORDER
 
-### Table 3: BORROWER
+| FIELD NAME   | DESCRIPTION                                | DATA TYPE | LENGTH | SAMPLE                   |
+|--------------|--------------------------------------------|-----------|--------|--------------------------|
+| ORDER_ID     | Unique ID for each order                   | String    | 255    | ORDER1234                |
+| USER_ID      | ID of the user who placed the order        | String    | 255    | ABC1234                  |
+| TOTAL_AMOUNT | Total amount of the order                  | Float     | -      | 750.00                   |
+| STATUS       | Order status (Pending, Shipped, Delivered) | String    | 255    | Pending                  |
+| CREATED      | Date the order was placed                  | Date      | -      | 12/12/2023               |
 
-| FIELD NAME   | DESCRIPTION                            | DATA TYPE | LENGTH | SAMPLE                   |
-|--------------|----------------------------------------|-----------|--------|--------------------------|
-| BORROWER_ID  | Borrower identification number         | String    | 255    | ADHASDH384323            |
-| USERNAME     | Borrower Username. It is shown in rating instead of Fullname | String | 255 | Thirdy454 |
-| FIRSTNAME    | Borrower first name                    | String    | 255    | Jose                     |
-| EMAIL        | Borrower Email                         | String    | 255    | Jgayares.a12034879@umak.edu.ph |
-| LASTNAME     | Borrower last name                     | String    | 255    | Gayares                  |
-| SECTION      | Borrower section                       | String    | 255    | III-ACDS                 |
-| COURSE       | Borrower course                        | String    | 255    | CDS                      |
-| COLLEGE      | Borrower college department            | String    | 255    | CCIS                     |
-| ADDED_BY     | Librarian name who registered the borrower | String | 255 | Raiden Guillergan        |
+### Table 4: ORDER_ITEMS 
 
-### Table 4: BOOKS
 
-| FIELD NAME  | DESCRIPTION                               | DATA TYPE | LENGTH | SAMPLE                                                           |
-|-------------|-------------------------------------------|-----------|--------|------------------------------------------------------------------|
-| BOOK_ID     | Book identification number                | String    | 255    | 2367284DGSHFG                                                    |
-| CODE        | QR CODE OR BAR CODE to easily track the book | String  | 255    | 1232fdsfw3                                                       |
-| TITLE       | Title of the book                         | String    | 255    | Noli Me tangere                                                  |
-| AUTHOR      | Author of the book                        | String    | 255    | Jose Rizal                                                       |
-| IMAGE       | Link of Image of the books                | String    | 255    | https://firebase.com/image.png                                   |
-| PUBLISHER   | Publisher of the book                     | String    | 255    | Jonny Company                                                    |
-| PUBLISHED DATE | Published date of the book            | Date      |        | July 8 1970                                                      |
-| DESCRIPTION | Description of the book                   | String    | 255    | Noli me tangere is a novel by Filipino author and patriot Jose Rizal |
-| CATEGORY    | Genre of the book to easily recommend to borrowers | String | 255 | Technology                                                       |
-| LOCATION    | Category of the book (uses Dewey decimal) | String    | 255    | 0123                                                             |
-| AVAILABLE   | Availability of the book, whether it has been borrowed by other borrowers or not | Boolean | | false |
-| CREATED     | Datestamp When the books were created     | Date      |        | 11 22 2022, 10:02                                                |
-| RATING_TOTAL| Total rating of the book                  | Int       | 55     | 513                                                              |
-| RATING_AVERAGE| Rating average of the book             | Float     | 55     | 5                                                                |
+| FIELD NAME       | DESCRIPTION                                   | DATA TYPE | LENGTH | SAMPLE      |
+|------------------|-----------------------------------------------|-----------|--------|-------------|
+| ORDER_ITEM_ID    | Unique ID for the order item                  | String    | 255    | ITEM1234    |
+| ORDER_ID         | ID of the related order                       | String    | 255    | ORDER1234   |
+| COMPONENT_ID     | ID of the purchased component                 | String    | 255    | CPU1234     |
+| QUANTITY         | Quantity ordered                              | Int       | -      | 2           |
+| UNIT_PRICE       | Price per unit of the component               | Float     | -      | 350.00      |
 
-### Table 5: BORROW
+### Table 5: CONFIGURATION
 
-| FIELD NAME       | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|------------------|----------------------------------|-----------|--------|----------------|
-| BOOKS_BORROWED_ID| Book borrowed identification number | STRING | 255    | DHSJKDHJSH     |
-| BOOKS_ID         | Book identification number       | STRING    | 255    | DNSJDHJSHUTY   |
-| BORROWER_ID      | Borrower identification number   | STRING    | 255    | FJSHFSGFGS     |
-| LIBRARIAN_ID     | Librarian identification number  | STRING    | 255    | DHSJKDHJSUT    |
-| BORROW_DATE      | Book borrowed date and time      | DATE      | 255    | 11 22 2022, 10:02 |
-| RETURN_DATE      | Book return date and time        | DATE      | 255    | 11 22 2022, 12:02 |
+| FIELD NAME         | DESCRIPTION                                         | DATA TYPE | LENGTH | SAMPLE                     |
+|--------------------|-----------------------------------------------------|-----------|--------|----------------------------|
+| CONFIGURATION_ID    | Unique ID for each configuration                   | String    | 255    | CONFIG1234                 |
+| USER_ID             | ID of the user who created the configuration       | String    | 255    | ABC1234                    |
+| COMPONENT_LIST      | List of components selected (IDs)                  | String    | 255    | [CPU1234, RAM5678]         |
+| TOTAL_PRICE         | Total price of the selected components             | Float     | -      | 700.00                     |
+| CREATED             | Date the configuration was created                 | Date      | -      | 12/12/2023                 |
 
-### Table 6: LIBRARIAN_LOGS
+### Table 6: LOGS
 
-| FIELD NAME       | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|------------------|----------------------------------|-----------|--------|----------------|
-| LIBRARY_LOGS_ID  | Unique Identification of LOGS    | String    | 255    | FSFFWWRD       |
-| ACTIVITIES       | Activities created by Librarian  | String    | 255    | Register Borrowers |
-| LIBRARIAN_ID     | Getting the ID of users          | String    | 255    | DJSKADHSD2     |
-| DATE_TIMESTAMP   | Generated date and time created  | Date      |        | 11 8 2022 19:01 |
+| FIELD NAME   | DESCRIPTION                                    | DATA TYPE | LENGTH | SAMPLE               |
+|--------------|------------------------------------------------|-----------|--------|----------------------|
+| LOG_ID       | Unique ID for each log entry                   | String    | 255    | LOG1234              |
+| USER_ID      | ID of the user who performed the action        | String    | 255    | ABC1234              |
+| ACTION       | Description of the action                      | String    | 255    | Placed Order         |
+| TIMESTAMP    | Date and time of the action                    | Date      | -      | 12/12/2023 12:00:00  |
 
-### Table 7: BORROWER_LOGS
 
-| FIELD NAME         | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|--------------------|----------------------------------|-----------|--------|----------------|
-| BORROWERS_LOGS_ID  | Unique Identification of LOGS    | String    | 255    | FSFFWWRD       |
-| ACTIVITIES         | Activities inside Library        | String    | 255    | SDI            |
-| BORROWERS_ID       | Getting the ID of borrowers      | String    | 255    | HDUSYD23       |
-| LIBRARIAN_ID       | Getting the ID of librarian      | String    | 255    | JDAHSDHD       |
-| DATETIMESTAMP      | Date                             | Date      |        | 11 12 2022 13:01 |
+### Table 8: RATINGS
 
-### Table 8: NOTIFICATION
-
-| FIELD NAME       | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|------------------|----------------------------------|-----------|--------|----------------|
-| NOTIFICATION_ID  | Unique Identification of ID      | String    | 255    | DHASJKHDJSK    |
-| TYPE             | Id of Book                       | String    | 255    | Borrow         |
-| MESSAGE          | The message of Notification      | String    | 255    | You Borrow a book "Noli Me Tangere" |
-| ID               | Type of Id                       | String    | 255    | GHDHFSGDD      |
-| CREATED          | Notification Created             | Date      |        | 12 12 2022, 17:02 |
-
-### Table 9: FAVORITES
-
-| FIELD NAME          | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|---------------------|----------------------------------|-----------|--------|----------------|
-| BOOKS_FAVORITES_ID  | Book Favorites identification number | String | 255    | HDJASDGS723    |
-| BOOKS_ID            | Books identification number      | String    | 255    | DHSUDIGSD62    |
-| BORROWER_ID         | Borrower identification number   | String    | 255    | JDISYDDCHJSDH  |
-
-### Table 10: QRCODE_STORE
-
-| FIELD NAME       | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|------------------|----------------------------------|-----------|--------|----------------|
-| QRCODE_ID        | Unique Identification of LOGS    | String    | 255    | FSFFWWRD       |
-| TYPE             | Type of QRCODE                   | String    | 255    |                |
-| STATUS           | If available or expired the qrcode | Boolean |        | true           |
-| ID               | The ID of the choosing type      | String    | 255    | SDSDFSFS2      |
-| CREATED          | Datestamp of QR CODE CREATED     | Date      |        | 12 12 2022     |
-
-### Table 11: RATING
-
-| FIELD NAME       | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|------------------|----------------------------------|-----------|--------|----------------|
-| RATING_ID        | Unique Identification of ID      | String    | 255    | DHASJKHDJSK    |
-| BOOK_ID          | Id of Book                       | String    | 255    | DSDHISHDD      |
-| BORROWER_ID      | User Id of Borrower              | String    | 255    | DJSJDHSDH      |
-| RATE             | Rate of the borrower's in the book 1-5 | Int  | 1  | 5 |
-| COMMENT          | Comment of the borrower's in the book | String | 255    | This book is awesome |
-| CREATED          | Rate Created                     | Date      |        | 12 12 2022     |
-
-### Table 12: LEADERBOARD
-
-| FIELD NAME       | DESCRIPTION                      | DATA TYPE | LENGTH | SAMPLE         |
-|------------------|----------------------------------|-----------|--------|----------------|
-| LEADERBOARD_ID   | Leaderboard identification number | String   | 255    | DSDWRFJ2       |
-| BOOKS_ID         | Books identification number      | String    | 255    | DSFSFW2FG      |
-| BORROWER_ID      | Borrower identification number   | String    | 255    | MNBGGHJHGG     |
-| POINTS           | Borrower Points                  | Int       | 55     | 5              |
-| CATEGORY         | Point Category                   | String    | 255    | Borrow         |
-
+| FIELD NAME      | DESCRIPTION                                 | DATA TYPE  | LENGTH | SAMPLE               |
+|-----------------|---------------------------------------------|------------|--------|----------------------|
+| RATING_ID       | Unique ID for the rating                    | String     | 255    | RATE1234             | 
+| USER_ID         | ID of the user who rated                    | String     | 255    | ABC1234              | 
+| COMPONENT_ID    | ID of the rated component                   | String     | 255    | CPU1234              | 
+| RATING_VALUE    | Rating given (1-5)                          | Int        | -      | 5                    |
+| COMMENT         | User comment on the component               | String     | 255    | Great performance!   |
+| CREATED         | Date the rating was submitted               | Date       | -      | 12/12/2023           |
 
 
 ## ERD
