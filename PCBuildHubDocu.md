@@ -46,7 +46,9 @@ on sales and user activities and will also be able to administer or have control
 
 ## Work breakdown Structure
 
-![image](https://github.com/user-attachments/assets/9c490c78-6f5f-46a9-965d-c6aa8a0941a5)
+
+![image](https://github.com/user-attachments/assets/9be82d3f-7156-405b-acbf-9e2dbef4ec9d)
+
 
 ## Functional Requirements
 
